@@ -17,8 +17,8 @@ export class AboutScreenComponent implements OnInit, AfterViewInit {
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
+    touchDrag: true,
+    pullDrag: true,
     dots: false,
     navSpeed: 700,
     navText: ['', ''],
@@ -45,8 +45,8 @@ export class AboutScreenComponent implements OnInit, AfterViewInit {
   customRevertOptions: OwlOptions = {
     loop: true,
     mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
+    touchDrag: true,
+    pullDrag: true,
     dots: false,
     navSpeed: 700,
     navText: ['', ''],

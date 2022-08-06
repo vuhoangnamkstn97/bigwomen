@@ -26,7 +26,10 @@ module.exports = {
           '75%': { transform: 'translateX(2rem)' },
           '100%': { transform: 'translateX(0rem)' },
         }
-      }
+      },
+    },
+    fontFamily: {
+      'nanumgothic': ['Nanum Gothic', 'sans-serif'] 
     },
   },
   plugins: [],
