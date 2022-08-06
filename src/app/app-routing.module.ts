@@ -1,12 +1,14 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { FirstScreenComponent } from './screens/first-screen/first-screen.component';
-import { SecondScreenComponent } from './screens/second-screen/second-screen.component';
+import { HomeScreenComponent } from './screens/home-screen/home-screen.component';
+import { AboutScreenComponent } from './screens/about-screen/about-screen.component';
+import { RoadmapScreenComponent } from './screens/roadmap-screen/roadmap-screen.component';
 
 const routes: Routes = [
-  { path: 'first-component', component: FirstScreenComponent },
-  { path: 'second-component', component: SecondScreenComponent },
-  { path: '', redirectTo: '/first-component', pathMatch: 'full' },
+  { path: 'home', component: HomeScreenComponent },
+  { path: 'about', component: AboutScreenComponent },
+  { path: 'roadmap', component: RoadmapScreenComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({

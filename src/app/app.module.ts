@@ -8,12 +8,18 @@ import { FooterComponent } from './screens/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PopupHeaderMobileComponent } from './screens/popup-header-mobile/popup-header-mobile.component';
+import { HomeScreenComponent } from './screens/home-screen/home-screen.component';
+import { AboutScreenComponent } from './screens/about-screen/about-screen.component';
+import { RoadmapScreenComponent } from './screens/roadmap-screen/roadmap-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     PopupHeaderMobileComponent,
+    HomeScreenComponent,
+    AboutScreenComponent,
+    RoadmapScreenComponent,
   ],
   imports: [
     BrowserModule,

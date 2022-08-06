@@ -17,11 +17,15 @@ export class PopupHeaderMobileComponent implements OnInit {
   readonly tabs = [
     {
       tabName: 'Home',
-      link: '/first-component',
+      link: '/home',
     },
     {
-      tabName: 'Detail',
-      link: '/second-component',
+      tabName: 'About',
+      link: '/about',
+    },
+    {
+      tabName: 'RoadMap',
+      link: '/roadmap',
     },
   ];
   faXmark = faXmark;

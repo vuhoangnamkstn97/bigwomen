@@ -22,11 +22,15 @@ export class HeaderComponent implements OnInit {
   readonly tabs = [
     {
       tabName: 'Home',
-      link: '/first-component',
+      link: '/home',
     },
     {
-      tabName: 'Detail',
-      link: '/second-component',
+      tabName: 'About',
+      link: '/about',
+    },
+    {
+      tabName: 'RoadMap',
+      link: '/roadmap',
     },
   ];
   currentBreakpoint: string = '';
