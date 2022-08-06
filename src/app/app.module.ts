@@ -6,14 +6,23 @@ import { NgModule } from '@angular/core';
 import { HeaderComponent } from './screens/header/header.component';
 import { FooterComponent } from './screens/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatDialogModule } from '@angular/material/dialog';
+import { PopupHeaderMobileComponent } from './screens/popup-header-mobile/popup-header-mobile.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    PopupHeaderMobileComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
+    MatDialogModule,
   ],
+  exports: [MatDialogModule],
   providers: [],
   bootstrap: [AppComponent],
 })

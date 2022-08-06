@@ -4,6 +4,8 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { distinctUntilChanged, tap } from 'rxjs';
 import { Router } from '@angular/router';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { MatDialog } from '@angular/material/dialog';
+import { PopupHeaderMobileComponent } from '../popup-header-mobile/popup-header-mobile.component';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -32,7 +34,8 @@ export class HeaderComponent implements OnInit {
   faBars = faBars;
   constructor(
     private breakpointObserver: BreakpointObserver,
-    public router: Router
+    public router: Router,
+    public dialog: MatDialog
   ) {}
 
   ngOnInit(): void {
@@ -48,5 +51,20 @@ export class HeaderComponent implements OnInit {
     } else {
       this.currentBreakpoint = Breakpoints.Large;
     }
+  }
+  openDialog() {
+    const dialogRef = this.dialog.open(PopupHeaderMobileComponent, {
+      height: '100vh',
+      width: '100%',
+      maxWidth: '100vw',
+      maxHeight: '100vh',
+      data: {},
+    });
+    dialogRef.afterClosed().subscribe((link) => {
+      if (!link) {
+        return;
+      }
+      this.router.navigateByUrl(link);
+    });
   }
 }
