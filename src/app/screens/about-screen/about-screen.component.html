@@ -1,6 +1,4 @@
-<div
-  class="flex flex-col items-center space-y-6 max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32 pb-8"
->
+<div class="flex flex-col items-center space-y-6 max-w-5xl mx-auto pt-10 pb-8">
   <h1
     class="font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center text-white"
   >
@@ -21,4 +19,37 @@
       throughout the metaverse.
     </p>
   </div>
+  <div class="w-4/5">
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let slide of slidesStore">
+        <ng-template carouselSlide [id]="slide.id">
+          <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title" />
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+
+  <!-- <div style="width: 920px; margin: auto">
+    <owl-carousel-o >
+      <ng-template carouselSlide id="owl-slide-1">
+        <div style="height: 100px">Slide 1</div>
+      </ng-template>
+
+      <ng-template carouselSlide id="owl-slide-2">
+        <div style="height: 40px">Slide 2</div>
+      </ng-template>
+
+      <ng-template carouselSlide id="owl-slide-3">
+        <div style="height: 80px">Slide 3</div>
+      </ng-template>
+
+      <ng-template carouselSlide id="owl-slide-4">
+        <div style="height: 130px">Slide 4</div>
+      </ng-template>
+
+      <ng-template carouselSlide id="owl-slide-5">
+        <div style="height: 90px">Slide 5</div>
+      </ng-template>
+    </owl-carousel-o>
+  </div> -->
 </div>

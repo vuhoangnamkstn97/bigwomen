@@ -11,6 +11,7 @@ import { PopupHeaderMobileComponent } from './screens/popup-header-mobile/popup-
 import { HomeScreenComponent } from './screens/home-screen/home-screen.component';
 import { AboutScreenComponent } from './screens/about-screen/about-screen.component';
 import { RoadmapScreenComponent } from './screens/roadmap-screen/roadmap-screen.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { RoadmapScreenComponent } from './screens/roadmap-screen/roadmap-screen.
     BrowserAnimationsModule,
     FontAwesomeModule,
     MatDialogModule,
+    CarouselModule,
   ],
   exports: [MatDialogModule],
   providers: [],
