@@ -1,7 +1,6 @@
 <div
   class="flex justify-between pb-8"
   *ngIf="currentBreakpoint === Breakpoints.Large; else mobileHeader"
-  style="border-bottom: 0.1rem solid white"
 >
   <div class="invisible">aaaaaaaaaaaaaaaaaaaa</div>
   <nav>
@@ -30,7 +29,7 @@
   </div>
 </div>
 <ng-template #mobileHeader>
-  <div class="flex justify-end">
+  <div class="flex justify-end pb-8">
     <button (click)="openDialog()">
       <fa-icon [icon]="faBars" class="text-4xl"></fa-icon>
     </button>
