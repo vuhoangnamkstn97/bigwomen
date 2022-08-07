@@ -58,10 +58,10 @@ export class HeaderComponent implements OnInit {
   }
   openDialog() {
     const dialogRef = this.dialog.open(PopupHeaderMobileComponent, {
-      height: '100vh',
+      height: '100%',
       width: '100%',
-      maxWidth: '100vw',
-      maxHeight: '100vh',
+      maxWidth: '100%',
+      maxHeight: '100%',
       data: {},
     });
     dialogRef.afterClosed().subscribe((link) => {
