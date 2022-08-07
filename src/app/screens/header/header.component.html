@@ -1,10 +1,11 @@
 <div
-  class="flex justify-between"
+  class="flex justify-between pb-8"
   *ngIf="currentBreakpoint === Breakpoints.Large; else mobileHeader"
+  style="border-bottom: 0.1rem solid white"
 >
   <div class="invisible">aaaaaaaaaaaaaaaaaaaa</div>
   <nav>
-    <ul class="flex space-x-6">
+    <ul class="flex space-x-32">
       <li *ngFor="let tab of tabs">
         <a
           [routerLink]="tab.link"

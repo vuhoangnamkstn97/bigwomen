@@ -1,10 +1,15 @@
-<div class="bg-black flex flex-col justify-between h-full p-6">
+<div
+  class="flex flex-col justify-between h-full p-6 pb-12"
+  style="background-image: url('assets/images/png/bg-image.png')"
+>
   <button (click)="closeDialog()" class="flex justify-end">
     <fa-icon [icon]="faXmark" class="text-4xl text-white"></fa-icon>
   </button>
   <div>
     <nav>
-      <ul class="flex flex-col grow justify-between items-center space-y-4">
+      <ul
+        class="flex flex-col grow justify-between items-center space-y-4 sm:space-y-8"
+      >
         <li *ngFor="let tab of tabs">
           <a
             (click)="closeDialog(tab.link)"
@@ -16,7 +21,7 @@
       </ul>
     </nav>
   </div>
-  <div class="flex flex-row justify-center space-x-4">
+  <div class="flex flex-row justify-center space-x-8 sm:space-x-12">
     <a href="https://twitter.com/tkpnft?s=21">
       <img src="assets/images/svg/icn_discord.png" alt="" class="icon" />
     </a>

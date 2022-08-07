@@ -21,15 +21,15 @@ export class HeaderComponent implements OnInit {
   activeItemIndex = 0;
   readonly tabs = [
     {
-      tabName: 'Home',
+      tabName: 'HOME',
       link: '/home',
     },
     {
-      tabName: 'About',
+      tabName: 'ABOUT',
       link: '/about',
     },
     {
-      tabName: 'RoadMap',
+      tabName: 'ROADMAP',
       link: '/roadmap',
     },
   ];
