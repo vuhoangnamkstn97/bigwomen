@@ -29,7 +29,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      'nanumgothic': ['Nanum Gothic', 'sans-serif'] 
+      'josefinsans': ['Josefin Sans', 'sans-serif'] 
     },
   },
   plugins: [],

@@ -12,6 +12,7 @@ import { HomeScreenComponent } from './screens/home-screen/home-screen.component
 import { AboutScreenComponent } from './screens/about-screen/about-screen.component';
 import { RoadmapScreenComponent } from './screens/roadmap-screen/roadmap-screen.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BaseComponentComponent } from './screens/base-component/base-component.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     HomeScreenComponent,
     AboutScreenComponent,
     RoadmapScreenComponent,
+    BaseComponentComponent,
   ],
   imports: [
     BrowserModule,
