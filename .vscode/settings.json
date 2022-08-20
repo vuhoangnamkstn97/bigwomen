@@ -2,7 +2,7 @@
     "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
     "editor.bracketPairColorization.enabled": true,
     "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "SimonSiefke.prettier-vscode",
         "editor.formatOnSave": true
     },
     "[scss]": {
